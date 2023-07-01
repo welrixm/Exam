@@ -21,6 +21,7 @@ namespace Exam
     /// </summary>
     public partial class MainWindow : Window
     {
+       // private static readonly Random _random = new Random();
 
         public MainWindow()
         {
