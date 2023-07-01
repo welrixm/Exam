@@ -1,0 +1,33 @@
+﻿<Window x:Class="Exam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                    <TextBlock Text="User" Margin="5"></TextBlock>
+                    <TextBox x:Name="UserTb" Width="200" PreviewTextInput="UserTb_PreviewTextInput"  MaxLength="50"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                    <TextBlock Text="Date" Margin="5"></TextBlock>
+                    <TextBox x:Name="DateTb" Width="200" PreviewTextInput="DateTb_PreviewTextInput"  MaxLength="10"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                    <TextBlock Text="Login" Margin="5"></TextBlock>
+                    <TextBox x:Name="LoginTb" Width="200" IsReadOnly="True"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                    <TextBlock Text="Password" Margin="5"></TextBlock>
+                    <TextBox x:Name="PasswordTb" Width="200" IsReadOnly="True"></TextBox>
+                </StackPanel>
+                <Button x:Name="GenerBtn" Content="Generation Login" Width="200" Click="GenerBtn_Click"></Button>
+                <Button x:Name="Gener2Btn" Content="Generation Password" Width="200" Click="Gener2Btn_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
